@@ -1,9 +1,6 @@
-# Notice that the totals above range from 2 to 12.
-#
+# Notice that the totals above (previous exercise) range from 2 to 12.
 # Figure out how many times each total will come up if each possible permutation is rolled once.
-#
 # Use a Hash with keys of 2, 3, 4, 5, 6, 7, 8, 9, 10, 11 & 12 to keep track of how many times each total occurred.
-#
 # Your output should look like so:
 #
 # $ ruby total_times.rb

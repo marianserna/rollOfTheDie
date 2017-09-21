@@ -1,7 +1,5 @@
 # Modify this program to also display the total of each permutation.
-#
 # Your output should look like so:
-#
 # $ ruby permutation_totals.rb
 # Dice Roll: 1, 1  Total: 2
 # Dice Roll: 1, 2  Total: 3

@@ -11,30 +11,18 @@ class War
     attacker_rolls = []
     defender_rolls = []
 
-    if attacker_armies == 2
-      2.times do
-        attacker_rolls << [*1..6].sample
-      end
-    elsif attacker_armies == 1
+    [3, attacker_armies].min.times do
       attacker_rolls << [*1..6].sample
-    else
-      3.times do
-        attacker_rolls << [*1..6].sample
-      end
     end
 
-    if defender_armies < 2
+    [2, defender_armies].min.times do
       defender_rolls << [*1..6].sample
-    elsif defender_armies >= 2
-      2.times do
-        defender_rolls << [*1..6].sample
-      end
     end
 
     rolls[:attacker_rolls] = attacker_rolls
     rolls[:defender_rolls] = defender_rolls
 
-    return rolls
+    rolls
   end
 
   def battle
